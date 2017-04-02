@@ -48,11 +48,20 @@ a {
 }
 .submenu {
   position: absolute;
+  width: 300%;
   top: 100%;
   left: 0;
-  width: 150%;
   z-index: 10;
   transition: 0.3s ease;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 150px;
+  -moz-column-width: 200px;
+  column-width: 200px;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
 }
 .navigation .submenu {
   -webkit-transform: scaleY(0);
@@ -72,7 +81,7 @@ a {
   color: white;
 }
 .submenu li a {
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.3);
 }
 form {
   position: relative;
@@ -100,12 +109,6 @@ form {
   background: rgba(0,0,0,0.2);
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-}
-.search button:before {
-  content: "\21A9";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: white;
 }
 .intro {
   position: relative;
