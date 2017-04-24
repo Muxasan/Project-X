@@ -139,31 +139,49 @@ form {
 }
 .bottom-block {
   display: flex;
-  border-top: 0.2vw solid rgba(0,0,0,1);
   border-bottom: 0.2vw solid rgba(0,0,0,1);
 }
 .bottom-block .left-block {
   display: flex;
   width: 50%;
-  height: 600px;
-  border: 0.2vw solid rgba(0,0,0,1);
-  float: left;
+  height: 100%;
+  flex-wrap: wrap;
+  border-right: 0.1vw solid rgba(0,0,0,1);
 }
 .bottom-block .right-block {
   display: flex;
   width: 50%;
-  height: 600px;
-  border: 0.2vw solid rgba(0,0,0,1);
-  float: right;
+  height: 100%;
+  flex-wrap: wrap;
+  border-left: 0.1vw solid rgba(0,0,0,1);
+}
+.left-block-image{
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  height: 250px;
+  width: 220px;
+}
+.left-block-image img{
+  display: block;
+  margin: 0 auto;
+}
+.left-block-image-description{
+  font-size: 15px;
+  text-align:center;
 }
 .right-block-image{
-	
+  padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+  height: 250px;
+  width: 220px;
+}
+.right-block-image img{
+  display: block;
+  margin: 0 auto;
 }
 .right-block-image-description{
-	
+  font-size: 15px;
+  text-align:center;
 }
 footer {
-  border: 0.2vw solid rgba(0,0,0,1);
   position: relative;
   font-size: 1.5vw;
   height: 5vw;
