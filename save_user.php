@@ -1,8 +1,8 @@
-﻿<?php
+<?php
     if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } 
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
 	if (isset($_POST['email'])) { $email = $_POST['email']; if ($email == '') { unset($email);} }
-    if (empty($login) or empty($password)) //если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
+    if (empty($login) or empty($password) or empty($email)) //если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
     {
     exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
     }
